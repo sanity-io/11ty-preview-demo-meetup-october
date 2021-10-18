@@ -1,9 +1,9 @@
 ---
 pagination:
   data: posts
-  size: 1
   alias: post
-  serverless: eleventy.serverless.path.id
+  size: 1
+  serverless: eleventy.serverless.path.slug
 permalink:
   build: "/{{post.slug}}/"
   serverless: "/:slug/preview/"
@@ -12,7 +12,7 @@ permalink:
   <body>
     <article>
       <small>
-        <a href="/">🏠 Home</a> –
+        🏠 <a href="/">Home</a> –
         <date>{{post.publishedAt}}</date> –
         <a href="/{{post.slug}}">Permalink</a></small>
       <h1>{{post.title}}</h1>

@@ -3,8 +3,8 @@ const client = require('../sanity')
 const query = `//groq
   *[_type == "post" && publishedAt < now()]{
     title,
-    "slug": slug.current,
     publishedAt,
+    "slug": slug.current,
     "body": pt::text(body)
   }
 `
