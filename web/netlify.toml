@@ -11,10 +11,3 @@ to = "/.netlify/functions/preview"
 status = 200
 force = true
 _generated_by_eleventy_serverless = "preview"
-
-[[redirects]]
-from = "/:slug/preview/"
-to = "/.netlify/functions/serverless"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "serverless"
