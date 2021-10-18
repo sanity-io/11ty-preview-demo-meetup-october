@@ -2,5 +2,3 @@
 .netlify
 node_modules
 _site
-netlify/functions/serverless/**
-!netlify/functions/serverless/index.js

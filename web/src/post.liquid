@@ -3,10 +3,10 @@ pagination:
   data: posts
   alias: post
   size: 1
-  serverless: eleventy.serverless.path.slug
+  preview: eleventy.preview.path.slug
 permalink:
   build: "/{{post.slug}}/"
-  serverless: "/:slug/preview/"
+  preview: "/:slug/preview/"
 ---
 <html>
   <body>

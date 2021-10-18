@@ -5,7 +5,7 @@ const { EleventyServerless } = require("@11ty/eleventy");
 require("./eleventy-bundler-modules.js");
 
 async function handler(event) {
-  let elev = new EleventyServerless("serverless", {
+  let elev = new EleventyServerless("preview", {
     path: event.path,
     query: event.queryStringParameters,
     functionsDir: "./netlify/functions/",
@@ -44,7 +44,7 @@ async function handler(event) {
 // * Runs on first request only: Netlify On-demand Builder
 //   (don’t forget to `npm install @netlify/functions`)
 
-exports.handler = handler;
+//exports.handler = handler;
 
-//const { builder } = require("@netlify/functions");
-//exports.handler = builder(handler);
+const { builder } = require("@netlify/functions");
+exports.handler = builder(handler);
