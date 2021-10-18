@@ -3,18 +3,22 @@ pagination:
   data: posts
   alias: post
   size: 1
-  preview: eleventy.preview.path.slug
 permalink:
   build: "/{{post.slug}}/"
-  preview: "/:slug/preview/"
+  preview: "/preview/:slug/"
 ---
 <html>
   <body>
     <article>
+      {% if eleventy.serverless.path.slug %}
+      <marquee>
+        PREVIEW MODE PREVIEW MODE PREVIEW MODE PREVIEW MODE PREVIEW MODE PREVIEW MODE PREVIEW MODE
+      </marquee>
+      {% endif %}
       <small>
         🏠 <a href="/">Home</a> –
         <date>{{post.publishedAt}}</date> –
-        <a href="/{{post.slug}}">Permalink</a></small>
+        <a href="/{{post.slug  | url}}">Permalink</a></small>
       <h1>{{post.title}}</h1>
       <main>{{ post.body }}</main>
     </article>

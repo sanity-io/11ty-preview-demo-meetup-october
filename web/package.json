@@ -13,6 +13,7 @@
   "dependencies": {
     "@11ty/eleventy": "^1.0.0-beta.2",
     "@netlify/functions": "^0.7.2",
+    "@sanity/block-content-to-html": "^2.0.0",
     "@sanity/client": "^2.21.3"
   }
 }
