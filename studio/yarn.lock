@@ -7586,7 +7586,7 @@ prompts@~2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7, prop-types@^15.7.2:
+prop-types@15.7.2, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8405,6 +8405,15 @@ sanity-diff-patch@^1.0.9:
   integrity sha512-J5YeuM/S7rLTp51iqUunwzz7Rf68K/jCDGKtNCj6Wzcfgf9CH+0GtPlvf2DFsg0QQhYYZ72FOVn6skmoLjMCdw==
   dependencies:
     diff-match-patch "^1.0.5"
+
+sanity-plugin-iframe-pane@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.npmjs.org/sanity-plugin-iframe-pane/-/sanity-plugin-iframe-pane-1.0.9.tgz#f828d0b206733ba8f5def560d1fb57f1dacca683"
+  integrity sha512-JpaKARcYVt9O5mmX3Swaw6BDC/cab4ba+kDlQ6OAq2GKvG1rTetUuL96qkOZsuf4OgSokGR/Znbvdh2AqUEohA==
+  dependencies:
+    "@sanity/icons" "^1.2.1"
+    "@sanity/ui" "^0.36.12"
+    prop-types "15.7.2"
 
 sax@~1.2.4:
   version "1.2.4"
