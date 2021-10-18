@@ -1,0 +1,7 @@
+<h1>A Blog!</h1>
+
+<ul>
+{% for post in posts %}
+<li><a href="/{{post.slug.current}}.html">{{post.title}}</a></li>
+{% endfor %}
+</ul>

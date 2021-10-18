@@ -1,0 +1,19 @@
+---
+pagination:
+  data: posts
+  size: 1
+  alias: post
+permalink: "/{{post.slug.current}}.html"
+---
+<html>
+  <body>
+    <article>
+      <small>
+        <a href="/">🏠 Home</a> –
+        <date>{{post.publishedAt}}</date> –
+        <a href="/{{post.slug.current}}">Permalink</a></small>
+      <h1>{{post.title}}</h1>
+      <main>{{ post.body }}</main>
+    </article>
+  </body>
+</html>
